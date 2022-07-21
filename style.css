@@ -216,6 +216,10 @@ a {
   background:white url(images/badguys.png) left top no-repeat;
 }
 
+#banner.badguys {
+  background:white url(images/d3_flight.png) left top no-repeat;
+}
+
 /* ////////////////////////////////////////
  * Page Settings
  */
