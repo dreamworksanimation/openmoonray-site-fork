@@ -213,11 +213,23 @@ a {
 }
 
 #banner.badguys {
+  background:white url(images/badguys.png) left top no-repeat;
+}
+
+#banner.badguys2 {
   background:white url(images/badguys2.png) left top no-repeat;
+}
+
+#banner.d3_beach {
+  background:white url(images/d3_beach.png) left top no-repeat;
 }
 
 #banner.d3_flight {
   background:white url(images/d3_flight.png) left top no-repeat;
+}
+
+#banner.trolls {
+  background:white url(images/trolls.png) left top no-repeat;
 }
 
 /* ////////////////////////////////////////
