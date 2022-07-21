@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"">
+<head>
+  <title>Features and Functionality - MoonRay</title>
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/iosicon.png" />
+
+  <meta name="description" content="Discover the advanced features of this open-source, Python-based Qt program designed for browsing, managing, and editing text-based files including USD, combining the best features from your favorite web browser and text editor into one application, with hooks to deeply integrate with other pipeline tools." />
+  <meta name="keywords" content="about,features,functionalityUSD,Universal Scene Description,python,Qt,Qt.py,open source,DreamWorks Animation,DreamWorks,animation,NBCU,NBC,Universal,NBC Universal,Comcast,Pixar,pxr,computer,graphics,browse,manage,edit,browser,manager,editor,plugin,contribute,usda,usdc,usdz,crate,film,text,usdcat,usdedit,usdview,file,files,file viewer,text editor,visual editor" />
+  <meta charset="utf-8"/>
+
+  <link href="fancybox/jquery.fancybox.min.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="common.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="navigation">
+        <span></span>
+        <div id="navigation-anchor"></div>
+        <div id="navigation-bar">
+          <a href="start42">Home</a>
+          <a class="on" href="about">About</a>
+          <a href="" target="_blank">Documentation</a>
+          <a href="license">License</a>
+          <a href="download">Download</a>
+        </div>
+      </div>
+      <div id="banner" class="dark_code2center"></div>
+    </div>
+    <div id="page">
+      <div id="content">
+        <h1>About MoonRay</h1>
+        <hr/>
+        <div class="section">
+          <p>DreamWorks’ in-house Monte Carlo Ray Tracer, MoonRay, was designed from the start with a focus on efficiency and scalability, with the mantra to “...keep all the vector lanes of all the cores of all the machines busy all the time with meaningful work”, as well as provide modern features for full artistic expression.  It can deliver a broad range of images from photorealistic to strongly stylized.  MoonRay is built on a leading-edge, highly-scalable architecture with no prior legacy code, allowing quick, feature-film quality artistic iteration using familiar tools. Additional  high-performance features include support for distributed rendering, a pixel matching XPU mode that offers improved performance by processing bundles of rays on the GPU as well as the CPU, and bundled path tracing. MoonRay includes a Hydra render delegate for integration into content creation tools that support the standard.</p>       
+          <p><a href="images/vectorized.png" data-fancybox data-caption="&lt;b&gt;USD Manager&lt;/b&gt;"><img src="images/vectorized.png" title="Vectorized MoonRay" width=600 /></a></p>
+        </div> <!-- end section -->
+        <div class="section">
+          <h2>Features</h2>
+          <div class="feature">
+            <h3>Distributed Rendering</h3>
+            <p>Arras is our cloud based framework that we use for distributing rendering tasks to a cluster or cloud. The client programs make use of an extremely thin and portable Arras SDK to connect to an arras rendering session. In the cluster there is a single moonray merge node which is responsible for sending final rendering results back to the client.
+            <p>In addition to enabling distributed rendering, this architecture makes it extremely simple to integrate MoonRay in a wide variety of client applications. Much easier than if the entire core rendering libraries needed integration with the client application.</p>
+            <br/>
+   
+            <h3>XPU Mode</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna duis convallis convallis tellus id.</p>
+            <h3>Hydra Render Delegate</h3>
+            <p>Vitae aliquet nec ullamcorper sit amet risus nullam eget. Rhoncus dolor purus non enim praesent.</p><br/>
+            <p>
+              <a href="images/screenshot_island.png" data-fancybox data-caption="&lt;b&gt;USD Manager&lt;/b&gt;&lt;br /&gt;Light mode"><img src="images/screenshot_island_thumb.png" title="Light mode" width=48% /></a>
+              <a href="images/screenshot_island_dark.png" data-fancybox data-caption="&lt;b&gt;USD Manager&lt;/b&gt;&lt;br /&gt;Dark mode"><img src="images/screenshot_island_dark_thumb.png" title="Dark mode" width=48% align=right /></a>
+            </p>
+            <h3>Checkpoint / Resume Rendering</h3>
+            <p>Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Id velit ut tortor pretium viverra.</p>
+            <h3>Layerable Materials</h3>
+            <p>Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Vitae sapien pellentesque habitant morbi tristique.</p>
+          </div>
+
+          <div class="feature-right">
+            <h3>Display Filters</h3>
+            <p>Justo laoreet sit amet cursus sit amet dictum sit amet. In metus vulputate eu scelerisque felis imperdiet.</p>
+            <h3>Profiling Viewer</h3>
+            <p>Porttitor eget dolor morbi non arcu. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque.</p>
+            <h3>Deep Images / Cryptomatte</h3>
+            <p>Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Velit dignissim sodales ut eu sem integer vitae.</p>
+            <h3>Light Filters</h3>
+            <p>Sit amet volutpat consequat mauris. Placerat in egestas erat imperdiet sed euismod nisi porta lorem.</p>
+            <h3>Adaptive and Uniform Sampling</h3>
+            <p>Dolor purus non enim praesent elementum facilisis. Interdum velit euismod in pellentesque massa placerat duis ultricies.</p>
+            <h3>Light Path Expressions</h3>
+            <p>Venenatis tellus in metus vulputate. Et tortor at risus viverra adipiscing at in.</p>
+            <h3>AOVs</h3>
+            <p>Et tortor at risus viverra adipiscing at in tellus integer. Dignissim cras tincidunt lobortis feugiat vivamus at augue.</p>
+          </div>
+        </div> <!-- end section -->
+          <div class="section">
+          <h2>Contributors</h2>
+
+          <div class="feature">
+            <h3>DreamWorks Animation</h3>
+            <p><ul class="bulleted">
+              <li>Ryan Amundson</li>
+              <li>Kevin Beason</li>
+              <li>Ron Bridger-Woods</li>
+              <li>Scott Cegielski</li>
+              <li>Xinling Chen</li>
+              <li>Mike Day</li>
+              <li>Priyamvad Deshmukh</li>
+              <li>Conrad Egan</li>
+              <li>Brian Green</li>
+              <li>Ningfeng Huang</li>
+              <li>Wei-Feng Huang</li>
+              <li>Keith Jeffery</li>
+              <li>Toshi Kato</li>
+              <li>Jerome Ko</li>
+              <li>Jon Lanz</li>
+              <li>Ashley Lee</li>
+              <li>Mark Lee</li>
+              <li>Jeffrey Mahovsky </li>
+              <li>Daniel McCann</li>
+              <li>Krishna Mullia</li>
+              <li>Marianna Neubauer</li>
+              <li>Bill Spitzak</li>
+              <li>Eric Tabellion</li>
+              <li>Bruce Tartaglia</li>
+              <li>Anoop Thomas</li>
+              <li>Trey White</li>
+              <li>Rob Wilson</li>
+              <li>Feng Xie</li>
+              <li>Cheng-Jui Yu</li>
+            </ul></p>
+          </div>
+
+          <div class="feature-right">
+            <h3>Comcast</h3>
+            <p><ul class="bulleted">
+              <li>Kevin Li</li>
+              <li>Vincent Santillo</li> 
+            </ul></p>
+             <h3>Intel</h3>
+            <p><ul class="bulleted">
+              <li>Louis Feng</li>
+              <li>Sheng Fu</li> 
+            </ul></p>
+            <h3>Allies</h3>
+            <p><ul class="bulleted">
+              <li>William Ballew</li>
+              <li>Jeffrey Bradley</li> 
+              <li>Mark Jackels</li>
+              <li>Robert Knaack</li> 
+              <li>Matthew Low</li>
+              <li>Randy Packer</li> 
+              <li>Andrew Pearce</li>
+              <li>Evan Smyth</li> 
+              <li>Matt Titus</li>
+              <li>Lincoln Wallen</li> 
+              <li>Jeffrey Wike</li>
+            </ul></p>  
+          </div> 
+        </div> <!-- end section -->
+
+        <div class="section">
+        <h2>Special Thanks</h2>
+          <div class="feature">
+            <h3>DreamWorks Animation</h3>
+            <!-- <p><ul class="bulleted">
+              <li></li>
+              <li></li>
+            </ul></p> -->
+            <br/><br/>
+          </div>
+        </div> <!-- end section -->
+      </div> <!-- end content -->
+      <div class="sidebar">
+        <div id="info-pane"></div>
+      </div> <!-- sidebar -->
+    </div> <!-- end page -->
+    <div id="footer"><p>Copyright &copy; 2018<script type="text/javascript">new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> DreamWorks Animation LLC. All Rights Reserved.</p></div>
+  </div>
+  <script src="fancybox/jquery.fancybox.min.js"></script>
+</body>
+</html>

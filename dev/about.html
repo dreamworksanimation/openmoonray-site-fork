@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <title>Features and Functionality - USD Manager</title>
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/iosicon.png" />
+
+  <meta name="description" content="Discover the advanced features of this open-source, Python-based Qt program designed for browsing, managing, and editing text-based files including USD, combining the best features from your favorite web browser and text editor into one application, with hooks to deeply integrate with other pipeline tools." />
+  <meta name="keywords" content="about,features,functionalityUSD,Universal Scene Description,python,Qt,Qt.py,open source,DreamWorks Animation,DreamWorks,animation,NBCU,NBC,Universal,NBC Universal,Comcast,Pixar,pxr,computer,graphics,browse,manage,edit,browser,manager,editor,plugin,contribute,usda,usdc,usdz,crate,film,text,usdcat,usdedit,usdview,file,files,file viewer,text editor,visual editor" />
+  <meta charset="utf-8"/>
+  <meta property="og:title" content="About USD Manager" />
+  <meta property="og:description" content="Discover the advanced features of this open-source, Python-based Qt program designed for browsing, managing, and editing text-based files including USD, combining the best features from your favorite web browser and text editor into one application, with hooks to deeply integrate with other pipeline tools." />
+  <meta property="og:url" content="http://www.usdmanager.org/" />
+  <meta property="og:image" content="http://www.usdmanager.org/images/dark_code_bg2.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1122" />
+  <meta property="og:image:height" content="501" />
+  <meta property="og:image:alt" content="USD Manager dark theme screenshot" />
+  <meta property="og:site_name" content="USD Manager" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+
+  <link href="fancybox/jquery.fancybox.min.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="common.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="navigation">
+        <span></span>
+        <div id="navigation-anchor"></div>
+        <div id="navigation-bar">
+          <a href="index.html">Home</a>
+          <a class="on" href="about.html">About</a>
+          <a href="http://usdmanager.readthedocs.io/" target="_blank">Documentation</a>
+          <a href="license.html">License</a>
+          <a href="download.html">Download</a>
+        </div>
+      </div>
+      <div id="banner" class="dark_code2center"></div>
+    </div>
+    <div id="page">
+      <div id="content">
+        <h1>About USD Manager</h1>
+        <hr/>
+        <div class="section">
+          <p>What makes USD Manager unique is the ability to parse any text file to provide web-like links to other files referenced within. Load a <a href="https://graphics.pixar.com/usd/docs/index.html", target="_blank">Universal Scene Description (USD)</a> file, for example, to see links to references, sublayers, and geometry or texture files. Browse to a referenced USD file and switch to Edit mode if you want to prototype a change, then use the Commands menu to launch your file in usdview to see if it works. Click on one of your referenced textures to launch it in a painting program or image viewer.</p>
+          <p>Whether you're prototyping a new USD-based pipeline or just want to see what makes up the guts of a USD file, USD Manager is an invaluable tool to have on your shelf and in many cases can completely replace your standard text editor. While primarily designed to support USD workflows, USD Manager can also be used with many other files types and customized to suit your needs.</p>
+          <p><a href="images/screenshot_island.png" data-fancybox data-caption="&lt;b&gt;USD Manager&lt;/b&gt;"><img src="images/screenshot_island.png" title="USD Manager" width=600 /></a></p>
+        </div> <!-- end section -->
+        <div class="section">
+          <h2>Features</h2>
+          <div class="feature">
+            <h3>Browsing</h3>
+            <p>USD Manager automatically parses files for potential links to other files. Browse through hierarchical, text-based files like USD as if you were in your favorite web browser. Standard features include browsing history and breadcrumbs, recent files, recently closed tabs, forward/back navigation, rearrangable tabs, and more.</p>
+            <br/>
+            <p>Links to existing files are highlighted in <span style="color:#00F">blue</span>, identified file paths that do not exist in <span style="color:#F33">red</span>, and links to wildcard-like file paths in <span style="color:#993">yellow</span>.</p>
+            <h3>Crate Support</h3><!--TODO: Add usdz support once it's in a better place-->
+            <p>Read and write binary crate files in-app as if they were ASCII-formatted. Crate files (saved with the .usd or .usdc extension) can be identified in open tabs with a binary icon. Links to crate files show up as a <span style="color:#69F">lighter blue color</span> than <span style="color:#00F">standard links</span>.</p>
+            <h3>Light & Dark Modes</h3>
+            <p>Defaulting to a standard, light-colored theme, the app also launches in dark mode with the -dark flag.</p><br/>
+            <p>
+              <a href="images/screenshot_island.png" data-fancybox data-caption="&lt;b&gt;USD Manager&lt;/b&gt;&lt;br /&gt;Light mode"><img src="images/screenshot_island_thumb.png" title="Light mode" width=48% /></a>
+              <a href="images/screenshot_island_dark.png" data-fancybox data-caption="&lt;b&gt;USD Manager&lt;/b&gt;&lt;br /&gt;Dark mode"><img src="images/screenshot_island_dark_thumb.png" title="Dark mode" width=48% align=right /></a>
+            </p>
+            <h3>Syntax Highlighting</h3>
+            <p>Syntax highlighting helps you read USD, Python, Lua, and more file types.</p><br/><p style="font-style:italic">On large files or really long lines, some syntax highlighting may be disabled to maintain responsivity.</p>
+            <h3>Plug-Ins &amp; Customization</h3>
+            <p>Custom plug-ins can be developed for USD Manager to add more menu items or other features to better integrate into a production pipeline. In addition, many app settings such as additional file extensions to support can be configured on install with a simple JSON file and customized per user in the app's Preferences dialog.</p>
+          </div>
+
+          <div class="feature-right">
+            <h3>Editing</h3>
+            <p>Switch to Edit mode on any writable file, make your changes, and save! The app includes many standard editing features such as cut/copy/paste, find/replace, comment/uncomment (with language-specific support), and indent/unindent. Use the "Diff File..." command to compare unsaved edits to the file on disk.</p>
+            <h3>File Conversion</h3>
+            <p>The Save As dialog allows you to switch file formats at any time, so you can convert between various formats and extensions like .usda and .usdc.</p>
+            <h3>Usdz Support</h3>
+            <p>Read usdz packages (zipped file archives of USD data with a .usdz extension) in-app with ease, even supporting nested layer references. Writing usdz packages is not supported at this point in time.</p>
+            <h3>Application Launchers</h3>
+            <p>Customize any file extension to launch files of that type via any command. Launch usdview when clicking on a Alembic (.abc) model, for example, and open .jpg and other image formats in your preferred image viewer. Register text-based file extensions like .txt or .log to open in your favorite alternate text editor or in USD Manager for a more seamless experience.</p><p><a href="images/screenshot_prefs2.png" data-fancybox data-caption="&lt;b&gt;USD Manager&lt;/b&gt;&lt;br /&gt;File format preferences"><img src="images/screenshot_prefs2.png" title="File format preferences" width=100% style="margin:1em 0" /></a></p><p style="font-style:italic">All USD file types open by default in USD Manager. To enable searching for links to other files, register file extensions in the app's config file or your user preferences.</p>
+            <h3>Qt.py</h3>
+            <p>The Qt.py library is used for compatibility with PySide, PySide2, PyQt4, and PyQt5 bindings for accessibility in more environments.</p>
+          </div>
+        </div> <!-- end section -->
+        <!--<div class="section">
+          <h2>Additional Contributors</h2>
+
+          <div class="feature">
+            <h3>Company Name</h3>
+            <p><ul class="bulleted">
+              <li>Person</li>
+            </ul></p>
+          </div>
+
+          <div class="feature-right">
+            <h3>Company Name</h3>
+            <p><ul class="bulleted">
+              <li>Person</li>
+            </ul></p>
+          </div>
+        </div>--> <!-- end section -->
+
+        <div class="section">
+        <h2>Special Thanks</h2>
+          <div class="feature">
+            <h3>DreamWorks Animation</h3>
+            <p><ul class="bulleted">
+              <li>Alan Blevins</li>
+              <li>Mark Sandell</li>
+            </ul></p><br/><br/>
+          </div>
+        </div> <!-- end section -->
+      </div> <!-- end content -->
+      <div class="sidebar">
+        <div id="info-pane"></div>
+      </div> <!-- sidebar -->
+    </div> <!-- end page -->
+    <div id="footer"><p>Copyright &copy; 2018<script type="text/javascript">new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> DreamWorks Animation LLC. All Rights Reserved.</p></div>
+  </div>
+  <script src="fancybox/jquery.fancybox.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <title>USD Manager - Open-Source File Browser &amp; Editor</title>
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=OmKd8pmvkn">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=OmKd8pmvkn">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=OmKd8pmvkn">
+  <link rel="manifest" href="/site.webmanifest?v=OmKd8pmvkn">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=OmKd8pmvkn" color="#0071bb">
+  <link rel="shortcut icon" href="/favicon.ico?v=OmKd8pmvkn">
+  <meta name="apple-mobile-web-app-title" content="USD Manager">
+  <meta name="application-name" content="USD Manager">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#ffffff">
+  
+  <meta name="description" content="An open-source, Python-based Qt program designed for browsing, managing, and editing text-based files including USD, combining the best features from your favorite web browser and text editor into one application, with hooks to deeply integrate with other pipeline tools." />
+  <meta name="keywords" content="USD,Universal Scene Description,python,Qt,Qt.py,open source,DreamWorks Animation,DreamWorks,animation,NBCU,NBC,Universal,NBC Universal,Comcast,Pixar,pxr,computer,graphics,browse,manage,edit,browser,manager,editor,plugin,contribute,usda,usdc,usdz,ascii,crate,zip,film,text,usdcat,usdedit,usdview,file,files,file viewer,text editor,visual editor,how do I edit usd files,convert" />
+  <meta charset="utf-8"/>
+  <meta property="og:title" content="USD Manager" />
+  <meta property="og:description" content="An open-source, Python-based Qt program designed for browsing, managing, and editing text-based files including USD, combining the best features from your favorite web browser and text editor into one application, with hooks to deeply integrate with other pipeline tools." />
+  <meta property="og:url" content="http://www.usdmanager.org/" />
+  <meta property="og:image" content="http://www.usdmanager.org/images/logo_cropped.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="420" />
+  <meta property="og:image:height" content="186" />
+  <meta property="og:image:alt" content="USD Manager logo" />
+  <meta property="og:site_name" content="USD Manager" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:image:alt" content="USD Manager logo" />
+  <meta name="google-site-verification" content="-x5sVxDx_vsCj1nux-TmFh-E1MArPk84hARgJaCRGfM" />
+
+  <link href="fancybox/jquery.fancybox.min.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="common.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="navigation">
+        <span></span>
+        <div id="navigation-anchor"></div>
+        <div id="navigation-bar">
+          <a class="on" href="/">Home</a>
+          <a href="about.html">About</a>
+          <a href="http://usdmanager.readthedocs.io/" target="_blank">Documentation</a>
+          <a href="license.html">License</a>
+          <a href="download.html">Download</a>
+        </div>
+      </div>
+      <div id="banner" class="dark_code2"></div>
+    </div>
+    <div id="page">
+      <div id="content">
+        <h1>Welcome</h1>
+        <hr/>
+        <div class="section">
+          <p>USD Manager is an open-source, Python-based Qt program designed for lightweight browsing, managing, and editing of <a href="http://graphics.pixar.com/usd" target="_blank">Universal Scene Description (USD)</a> files.
+          This tool combines the best features of your favorite web browser and text editor into one application, offering easy inspection of a scene's hierarchy of files, plus hooks to deeply integrate with other pipeline tools and text-based workflows. USD Manager serves as a quick option for prototyping new ideas, allows simple navigation to files referenced several layers deep in a pipeline, provides an application launcher for custom file formats, and assists as a learning tool in understanding the complex hierarchy of shots and assets.</p>
+          <p><a href="images/screenshot_island.png" data-fancybox data-caption="&lt;b&gt;USD Manager&lt;/b&gt;"><img src="images/screenshot_island.png" title="USD Manager" width=600 /></a></p>
+          <p style="font-style:italic">USD Manager was primarily developed by Mark Sandell and is maintained by <a href="http://www.dreamworksanimation.com/" target="_blank">DreamWorks Animation</a> for use with USD and other hierarchical, text-based workflows in feature film production.</p>
+          
+          <h2>News &amp; Releases</h2>
+          <div class="news_item">
+            <h3>November 18, 2021</h3>
+            <p>USD Manager 0.12.1 <a href="https://github.com/dreamworksanimation/usdmanager/releases/tag/0.12.1" target="_blank">released</a> with Ar 2.0 and PyQt5 QUrl backwards compatibility.</p>
+          </div>
+          <div class="news_item">
+            <h3>August 4, 2021</h3>
+            <p>USD Manager 0.12.0 <a href="https://github.com/dreamworksanimation/usdmanager/releases/tag/0.12.0" target="_blank">released</a> for improved USDZ logic, Find/Replace enhancements, optimizations, display updates, and several bug fixes.</p>
+          </div>
+          <div class="news_item">
+            <h3>February 22, 2021</h3>
+            <p>USD Manager 0.11.0 <a href="https://github.com/dreamworksanimation/usdmanager/releases/tag/0.11.0" target="_blank">released</a> for new features including auto-indentation, the ability to customize file parsing by extension, additional USDC and USDZ support, better OS compatibility, file change notifications, and more.</p>
+            <p>A new <a href="https://github.com/dreamworksanimation/usdmanager/tree/python3" target="_blank">python3 branch</a> is available as well!</p>
+          </div>
+          <div class="news_item">
+            <h3>April 6, 2020</h3>
+            <p>USD Manager 0.10.0 <a href="https://github.com/dreamworksanimation/usdmanager/releases/tag/0.10.0" target="_blank">released</a> for logging improvements, OS compatibility, and general maintenance.</p>
+          </div>
+          <div class="news_item">
+            <h3>January 21, 2020</h3>
+            <p>USD Manager 0.9.0 <a href="https://github.com/dreamworksanimation/usdmanager/releases/tag/0.9.0" target="_blank">released</a> for a variety of enhancements including faster repeat crate file access, nested USDZ support, and improved tab navigation. Please see the release notes for full details.</p>
+          </div>
+          <div class="news_item">
+            <h3>December 10, 2019</h3>
+            <p>USD Manager 0.8.0 <a href="https://github.com/dreamworksanimation/usdmanager/releases/tag/0.8.0" target="_blank">released</a> for syntax highlighting and dark theme improvements, a change to user variable expansion, and general maintenance.</p>
+          </div>
+          <div class="news_item">
+            <h3>July 22, 2019</h3>
+            <p>USD Manager 0.7.0 <a href="https://github.com/dreamworksanimation/usdmanager/releases/tag/0.7.0" target="_blank">released</a> for user preference improvements, some minor bug fixes, and additional Windows support.</p>
+          </div>
+          <div class="news_item">
+            <h3>July 9, 2019</h3>
+            <p>USD Manager 0.6.0 <a href="https://github.com/dreamworksanimation/usdmanager/releases/tag/0.6.0" target="_blank">released</a> for additional Windows support, plus improved themes and indentation behavior.</p>
+          </div>
+          <div class="news_item">
+            <h3>June 20, 2019</h3>
+            <p>USD Manager 0.5.0 <a href="https://github.com/dreamworksanimation/usdmanager/releases/tag/0.5.0" target="_blank">released</a> for a variety of bug fixes, cross-platform support, and a handful of new features.</p>
+          </div>
+          <div class="news_item">
+            <h3>June 3, 2019</h3>
+            <p>USD Manager 0.4.1 <a href="https://github.com/dreamworksanimation/usdmanager/releases/tag/0.4.1" target="_blank">released</a> for code cleanup and a minor bug fix.</p>
+          </div>
+          <div class="news_item">
+            <h3>March 29, 2019</h3>
+            <p>USD Manager 0.4.0 is now available to <a href="download.html" target="_blank">download</a>.</p>
+            <p>This is the first publicly available release for the open-source community! Read the full press release <a href="USDManagerPressRelease.pdf">here</a>.</p>
+          </div>
+        </div> <!-- end section -->
+      </div> <!-- end content -->
+      <div class="sidebar">
+        <div id="info-pane"></div>
+      </div> <!-- sidebar -->
+    </div> <!-- end page -->
+    <div id="footer"><p>Copyright &copy; 2018<script type="text/javascript">new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> DreamWorks Animation LLC. All Rights Reserved.</p></div>
+  </div>
+  <script src="fancybox/jquery.fancybox.min.js"></script>
+</body>
+</html>
