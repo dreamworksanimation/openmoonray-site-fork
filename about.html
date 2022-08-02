@@ -52,10 +52,6 @@
             <p>MoonRay's XPU mode is the industry's first true production capable GPU accelerated renderer.  XPU mode achieves 100% output matching with non-GPU modes and incorporates a graceful fallback-to-CPU mechanism if the GPU has insufficient memory for the scene or other GPU error occurs.  XPU treats the GPU like an additional co-processor, submitting work to it while load-balancing the work with the CPU cores.</p>
             <h3>Hydra Render Delegate</h3>
             <p>MoonRay comes with a Hydra Render Delegate for interactive preview rendering, that is compatible with any Hydra API supporting DCC tool.  Upon finalization of the Hydra API specification, MoonRay will provide support for final frame batch rendering, and it's Hydra Render Delegate will be the supported path to transform USD into MoonRay's internal Lua-based RDL scene format.</p><br/>
-            <p>
-              <a href="images/screenshot_island.png" data-fancybox data-caption="&lt;b&gt;USD Manager&lt;/b&gt;&lt;br /&gt;Light mode"><img src="images/screenshot_island_thumb.png" title="Light mode" width=48% /></a>
-              <a href="images/screenshot_island_dark.png" data-fancybox data-caption="&lt;b&gt;USD Manager&lt;/b&gt;&lt;br /&gt;Dark mode"><img src="images/screenshot_island_dark_thumb.png" title="Dark mode" width=48% align=right /></a>
-            </p>
             <h3>Checkpoint / Resume Rendering</h3>
             <p>MoonRay supports time, quality and signal based checkpoints and resume rendering, to handle many common scenarios to stop a render process deliberately to keep rendering time and cost to a very minimum.  MoonRay additionally supports resume of a checkpoint for either adding more samples into the previously rendered image if more samples are needed in order to reduce the noise level, or to recover from unintended job stoppage.</p>
             <h3>Layerable Materials</h3>
@@ -66,8 +62,9 @@
           <div class="feature-right">
             <h3>Display Filters</h3>
             <p>MoonRay provides a set of Display Filters which can serve as compositing nodes that can be piped from AOVs in Moonray along with other Display Filters, which allows progressive refinement in an artist's interactive render session. Useful for non-photoreal and compositing workflows.</p>
-            <p>                        
-              <a href="images/display_filters.png" data-fancybox data-caption="&lt;b&gt;Display Filters&lt;/b&gt;&lt;br /&gt;Light mode"><img src="images/display_filters_thumb.png" width=100% /></a>
+            <p>
+              <a href="images/display_filters.png" data-fancybox data-caption="&lt;b&gt;Display Filters&lt;/b&gt;&lt;br /&gt;Light mode"><img src="images/display_filters_thumb.png" title="Light mode" width=48% /></a>
+              <a href="images/display_filters2.png" data-fancybox data-caption="&lt;b&gt;Display Filters&lt;/b&gt;&lt;br /&gt;Dark mode"><img src="images/display_filters2_thumb.png" title="Dark mode" width=48% align=right /></a>
             </p>
             <h3>Profiling Viewer</h3>
             <p>The standalone Profiling Viewer helps track render performance across a set of canonical tests over time.  Useful to spot potential regressions and make informed decisions on functional changes and their impact to optimum render effiency.</p>
