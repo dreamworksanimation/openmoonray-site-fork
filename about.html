@@ -79,9 +79,7 @@
             <p>MoonRay supports uniform sampling that generates a pre-determined number of pixel, lens, and time samples for each pixel. Uniform samples are always a perfect square.  MoonRay also supports adaptive sampling, measuring the error in the beauty frame buffer to determine when to stop generating primary samples, taking an efficient non-local view of the frame buffer to eliminate artifacts.  Additionally, MoonRay performs filter importance sampling, warping pixel samples before tracing the rays instead of filtering when recording samples into the frame buffer.</p>
             <h3>Vectorization</h3>
             <p>MoonRay is the first production path tracer, to our knowledge, designed to fully leverage Single Instruction/Multiple Data (SIMD) vector units throughout. To achieve high SIMD efficiency, we employ Embree for tracing rays and <a href="https://research.dreamworks.com/wp-content/uploads/2018/07/Vectorized_Production_Path_Tracing_DWA_2017.pdf">vectorize</a> the remaining compute intensive components of the renderer: the integrator, the shading system and shaders, and the texturing engine. Queuing is used to help keep all vector lanes full and improve data coherency. </p>
-            <h3>Light Path Expressions</h3>
-            <p>Venenatis tellus in metus vulputate. Et tortor at risus viverra adipiscing at in.</p>
-            <h3>AOVs</h3>
+            <h3>Light Path Expressions / AOVs</h3>
             <p>All light path expression based AOVs are associated with radiance values.  We support basic outputs, which describe the differential geometry at the primary ray intersection point, as State AOVs.</p>
             <p>&nbsp;</p><p>MoonRay also supports custom outputs such as HeatMap (time per pixel) and wireframe which is used for tessellation diagnostic purposes.</p>
             <p>&nbsp;</p><p>Additionally, Material AOVs provide detailed diagnostics about the materials and are extremely helpful to surfacing and lighting artists when verifying material correctness and standards conformance.</p>
