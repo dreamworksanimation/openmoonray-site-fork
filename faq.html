@@ -70,12 +70,10 @@
               </ul></p>
             <h3>Is OSL or MaterialX supported?</h3>
             <p>Not currently.  <a href="https://ispc.github.io/">ISPC</a> was chosen as the language for shaders to take advantage of vectorization. MoonRay will be released with a robust set of efficient, layerable materials such as dielectrics, skin, fabric, hair, etc.  New/custom Material/Displacement/Map shaders can be developed via the Shading API.</p>
-            <h3>Light Path Expressions / AOVs</h3>
-            <p>All light path expression based AOVs are associated with radiance values.  MoonRay supports basic outputs, which describe the differential geometry at the primary ray intersection point, as State AOVs. MoonRay also supports custom outputs such as HeatMap (time per pixel) and wireframe which is used for tessellation diagnostic purposes.</p>
-            <p>&nbsp;</p><p>Additionally, Material AOVs provide detailed diagnostics about the materials and are extremely helpful to surfacing and lighting artists when verifying material correctness and standards conformance.    MoonRay's Material AOV syntax (intentionally similar to LPE syntax) complements light path expressions, which concern themselves with how a ray travels through the scene.  Material AOV syntax focuses on extracting properties of a bsdf at an intersection.</p>
-            <p>                        
-              <a href="images/aovs.png" data-fancybox data-caption="&lt;b&gt;A few example AOVs&lt;/b&gt;&lt;br /&gt;"><img src="images/aovs_thumb.png" width=100% /></a>
-            </p>
+            <h3>What hair geometry generators are integrated?</h3>
+            <p>MoonRay does not include direct support for commercially available hair geometry tools.  DreamWorks uses an internal tool for our hair.  MoonRay can render curves by specifying them directly in MoonRay's scene description language (RDL) or through the USD specification. In addition, the procedural Geometry API can be extended to support additional curve formats and allows developers to write custom geometry generators for integrating any studio or commercial hair tools.  There is also an RDLCurvesGeometry procedural that allows for feeding curves directly to the renderer via a list of curves/vertices.</p>
+            <h3>What scene description format does MoonRay use?</h3>
+            <p>MoonRay has a custom scene description language called RDL that is built upon the Lua programming language, which has binary and ASCII variants. The Hydra delegate uses USD as the scene description and translates to RDL.</p>
           </div>
         </div> <!-- end section -->
         </div> <!-- end section -->
