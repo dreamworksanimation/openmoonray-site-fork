@@ -38,13 +38,18 @@
           <div class="faq">
             <h3>Will MoonRay be integrated into... [third-party application]?</h3>
             <p>The team at DreamWorks has developed and supports a Hydra delegate, hdMoonRay, intended as the canonical means for DCC integration. This is included in the open-source release.</p>
-            <p>&nbsp;</p><p>Custom DCC integrations can also be developed via MoonRay’s robust API.  MoonRay can be run from the command-line with or without a GUI window using the internal RDL scene description language.</p>
+            <p>&nbsp;</p><p>We also provide a stand-alone GUI application for interactive rendering outside of DCCs.</p>
+            <h3>What about batch rendering?</h3>
+            <p>MoonRay can be run from the command-line using the RDL scene description language for farm applications.</p>
+            <p>&nbsp;</p><p>A future version of our Hydra Render Delegate is intended to support batch rendering of USD scenes in addition to the current interactive rendering.</p>
+            <h3>What scene description format does MoonRay use?</h3>
+            <p>MoonRay has a custom scene description language called RDL (Render Data Layer) that is built upon the Lua programming language, which has binary and ASCII variants. The Hydra delegate uses USD as the scene description and translates to RDL.</p>
             <h3>Is MoonRay free to use?</h3>
             <p>In line with the <a href="license">Apache version 2 license</a>, MoonRay is free to use and modify for both independent and commercial use.</p>
             <h3>Is MoonRay in active development at DreamWorks?</h3>
             <p>Yes!  MoonRay is the renderer used for all DreamWorks Animation feature movies. It has a full-time development staff focused on those productions and contributions from the open-source community.</p>
             <h3>Can I contribute to the development of MoonRay?</h3>
-            <p>DreamWorks Animation is happy to welcome community improvements to the MoonRay codebase! The MoonRay GitHub repository will provide guidance on contributions and how to become a contributor.</p><br/>
+            <p>We are happy to welcome community improvements to the MoonRay codebase! The MoonRay GitHub repository will provide guidance on contributions and how to become a contributor.</p><br/>
             <h3>What are the minimum hardware requirements for MoonRay?</h3>
             <p>MoonRay targets x86-64 hardware with AVX2.  AVX1 runs but is not supported and will not be as efficient.</p>          
             <h3>What are the minimum software requirements?</h3>
@@ -71,9 +76,9 @@
             <h3>Is OSL or MaterialX supported?</h3>
             <p>Not currently.  <a href="https://ispc.github.io/">ISPC</a> was chosen as the language for shaders to take advantage of vectorization. MoonRay will be released with a robust set of efficient, layerable materials such as dielectrics, skin, fabric, hair, etc.  New/custom Material/Displacement/Map shaders can be developed via the Shading API.</p>
             <h3>What hair geometry generators are integrated?</h3>
-            <p>MoonRay does not include direct support for commercially available hair geometry tools.  DreamWorks uses an internal tool for our hair.  MoonRay can render curves by specifying them directly in MoonRay's scene description language (RDL) or through the USD specification. In addition, the procedural Geometry API can be extended to support additional curve formats and allows developers to write custom geometry generators for integrating any studio or commercial hair tools.  There is also an RDLCurvesGeometry procedural that allows for feeding curves directly to the renderer via a list of curves/vertices.</p>
-            <h3>What scene description format does MoonRay use?</h3>
-            <p>MoonRay has a custom scene description language called RDL (Render Data Layer) that is built upon the Lua programming language, which has binary and ASCII variants. The Hydra delegate uses USD as the scene description and translates to RDL.</p>
+            <p>MoonRay does not include direct support for commercially available hair geometry tools.  DreamWorks uses internal tools with associated geometry procedurals.  MoonRay can render curves directly via a provided RDLCurvesGeometry procedural that accepts a list of curves/vertices.</p>
+            <p>&nbsp;</p><p>We also support USD curves via the MoonRay Hydra delegate and through a provided USDGeometry procedural.</p>
+            <p>&nbsp;</p><p>The procedural Geometry API can be used or extended to support additional curve formats and allows developers to write custom geometry generators for integrating any studio or commercial hair tools.</p>
           </div>
         </div> <!-- end section -->
       </div> <!-- end content -->
