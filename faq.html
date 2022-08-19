@@ -49,15 +49,6 @@
             <p>MoonRay targets x86-64 hardware with AVX2.  AVX1 runs but is not supported and will not be as efficient.</p>          
             <h3>What are the minimum software requirements?</h3>
             <p>MoonRay currently runs on Linux and is compiled with C++17 and Intel’s <a href="https://ispc.github.io/">ISPC</a>. MoonRay is continually built inside DreamWorks Animation with GCC, Intel’s ICC and Clang.</p>
-          </div>
-
-          <div class="feature-right">
-            <h3>Do I need to use MoonRay’s GPU hardware acceleration?</h3>
-            <p>No.  MoonRay performs extremely well without GPU hardware acceleration.</p>
-            <h3>Do the images created with GPU hardware acceleration differ from those created without?</h3>
-            <p>No.  DreamWorks has worked hard to ensure that the images are identical with and without hardware acceleration. </p>
-            <h3>Which hardware does MoonRay’s GPU hardware acceleration support?</h3>
-            <p>MoonRay’s GPU hardware acceleration is implemented through OptiX/CUDA, meaning the hardware acceleration currently requires Nvidia GPUs.</p>
             <h3>What Operating System versions and variants are currently available?</h3>
             <p>The DreamWorks build environment consists of the following:
               <ul>
@@ -68,6 +59,15 @@
                 <li>GCC 9.3 [VFX RefPlat 2021]</li>
                 <li>Clang 13 [VFX RefPlat 2021]</li>
               </ul></p>
+          </div>
+
+          <div class="feature-right">
+            <h3>Do I need to use MoonRay’s GPU hardware acceleration?</h3>
+            <p>No.  MoonRay performs extremely well without GPU hardware acceleration.</p>
+            <h3>Do the images created with GPU hardware acceleration differ from those created without?</h3>
+            <p>No.  DreamWorks has worked hard to ensure that the images are identical with and without hardware acceleration. </p>
+            <h3>Which hardware does MoonRay’s GPU hardware acceleration support?</h3>
+            <p>MoonRay’s GPU hardware acceleration is implemented through OptiX/CUDA, meaning the hardware acceleration currently requires Nvidia GPUs.</p>
             <h3>Is OSL or MaterialX supported?</h3>
             <p>Not currently.  <a href="https://ispc.github.io/">ISPC</a> was chosen as the language for shaders to take advantage of vectorization. MoonRay will be released with a robust set of efficient, layerable materials such as dielectrics, skin, fabric, hair, etc.  New/custom Material/Displacement/Map shaders can be developed via the Shading API.</p>
             <h3>What hair geometry generators are integrated?</h3>
