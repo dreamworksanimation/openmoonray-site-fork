@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"">
+<head>
+                
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6EPGXF20QR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6EPGXF20QR');
+</script>
+
+  <title>MoonRay Production Renderer</title>
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="manifest" href="/site.webmanifest?v=OmKd8pmvkn">
+  <meta name="apple-mobile-web-app-title" content="MoonRay">
+  <meta name="application-name" content="MoonRay">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#ffffff">
+  
+<meta name="description" content="MoonrRay Production Renderer: An open-source, performant, scalable and modern raytracing production renderer used in high-quality feature-film animation and simulation rendering." />
+<meta name="keywords" content="MoonRay,MCRT,renderer,rendering,path tracer,path tracing,ray tracer,raytracer,raytracing,rendering,production,vectorized rendering,vectorization,open source,DreamWorks Animation,DreamWorks,animation,hydra delegate,computer graphics" />  <meta charset="utf-8"/>
+
+  <link href="fancybox/jquery.fancybox.min.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="common.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="navigation">
+        <span></span>
+        <div id="navigation-anchor"></div>
+        <div id="navigation-bar">
+          <a class="on" href="/">Home</a>
+          <a href="about">About</a>
+          <a href="faq">FAQ</a>
+          <a href="documentation">Documentation</a>
+          <a href="license">License</a>
+          <a href="download">Download</a>
+        </div>
+      </div>
+      <div id="banner" class="badguys"></div>
+    </div>
+    <div id="page">
+      <div id="content">
+        <h1>Welcome</h1>
+        <hr/>
+        <div class="section">
+          <p>MoonRay is DreamWorks’ open-source, <a href="https://research.dreamworks.com/wp-content/uploads/2019/10/2019-10-02-DreamWorks-Animation-Lumiere-Award-Moonray-Arras.pdf">award-winning</a>, state-of-the-art production MCRT renderer, which has been used on feature films such as How to Train Your Dragon: The Hidden World, Trolls World Tour, The Bad Guys, the upcoming Puss In Boots: The Last Wish, as well as future titles.  MoonRay was developed at DreamWorks and is in continuous active development and includes an extensive library of production-tested, physically based materials, a USD Hydra render delegate, multi-machine and cloud rendering via the Arras distributed computation framework.</p>
+                            
+          <p><a href="images/paper.png" data-fancybox data-caption="&lt;b&gt;MoonRay&lt;/b&gt;"><img src="images/paper.png" title="MoonRay" width=600 /></a></p>
+          <p style="font-style:italic">MoonRay is developed in-house and is maintained by <a href="http://www.dreamworksanimation.com/" target="_blank">DreamWorks Animation</a> for all of their feature film production.  Many thanks go to all of the engineers for building and delivering this state of the art MCRT renderer since the very beginning, and to DreamWorks Animation for continuing a long tradition of contributing back to the wider computer graphics community.</p>
+          <p>We invite you to watch our Sizzle Reel!</p>
+          <p><iframe width="560" height="315" src="https://www.youtube.com/embed/RgVbXwfCy3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          <h2>News &amp; Releases</h2>
+          <div class="news_item">
+            <h3>15-March-2023</h3>
+            <p>MoonRay is available on it's first release!  Read the full press release <a href="MoonRayPressRelease_Launch.pdf">here</a>.</p>
+            <img src="images/trolls2_barb.png" title="MoonRay" width=600 />
+          </div>
+          <div class="news_item">
+            <h3>16-February-2023</h3>
+            <p>At the <a href="https://events.linuxfoundation.org/aswf-open-source-forum/">Academy Software Foundation's Open Source Forum</a> we mentioned that we are very close to our full launch.  In the meantime, we hope you enjoy diving into our <a href="https://docs.openmoonray.org">MoonRay Documentation site</a>, which we've released today.</p>                    
+            <p>We invite you to watch our new Sizzle Reel of MoonRay rendering Intel's newly released 4004 Moore Lane USD Scene, with CPU denoising using Intel's Open Image Denoiser, contributed and integrated into MoonRay.</p>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/51gFvyVvBjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          </div>
+            <div class="news_item">
+            <h3>01-February-2023</h3>
+            <p>We'll be presenting an update on open sourcing MoonRay at the Academy Software Foundation's Open Source Forum on February 16th. Exciting stuff to talk about! You can register <a href="https://events.linuxfoundation.org/aswf-open-source-forum/">here</a> and also watch this space for updates.</p>                    
+          </div>
+            <div class="news_item">
+            <h3>03-January-2023</h3>
+            <p>We sent out a mailer before the holiday break with the update that we're pushing the release to Q1 of 2023.  While we've made great strides, trying to rush it out just before the holidays did not seem prudent.</p>
+            <p>We look forward to sharing and collaborating on the technology with everyone very soon!</p>                    
+          </div>
+          <div class="news_item">
+            <h3>05-August-2022</h3>
+            <p>MoonRay will be open source later in 2022.  Read the full press release <a href="MoonRayPressRelease.pdf">here</a>.</p>
+            <img src="images/trolls2_cloudguy.png" title="MoonRay" width=600 />
+          </div>
+        </div> <!-- end section -->
+      </div> <!-- end content -->
+      <div class="sidebar">
+        <div id="info-pane"></div>
+      </div> <!-- sidebar -->
+    </div> <!-- end page -->
+    <div id="footer">
+      <p>Copyright &copy; 2022<script type="text/javascript">new Date().getFullYear()>2022&&document.write("-"+new Date().getFullYear());</script> DreamWorks Animation LLC. All Rights Reserved.
+      <br>MoonRay & Arras &copy DreamWorks Animation LLC.</p>
+    </div>
+  </div>
+  <script src="fancybox/jquery.fancybox.min.js"></script>
+</body>
+</html>
