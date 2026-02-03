@@ -35,7 +35,7 @@ export const home_paper = "https://openmoonray.org/images/home_paper.png"
 export const home_puss_in_boots = "https://openmoonray.org/images/home_puss_in_boots.jpeg"
 export const home_cloud_guy = "https://openmoonray.org/images/home_footer.png"
 export const license_cover = "https://openmoonray.org/images/license_cover.png"
-export const moonray_logo = "https://maabscorner.com/images/moonray_logo.png"
+export const moonray_logo = "https://openmoonray.org/images/moonray_logo.png"
 export const footer_logo = "https://openmoonray.org/images/dw_logo.png"
 
 
