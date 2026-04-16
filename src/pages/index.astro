@@ -40,6 +40,51 @@ import * as Asset from '../scripts/AssetsPath'
 
 <h1 class="text-3xl font-bold pt-10">News &amp; Releases</h1>
     <NewsItem
+      date="5-February-2026"
+      story={`
+          <p>
+            MoonRay 2.40.0.1 is now available for 
+            <a href="https://github.com/dreamworksanimation/openmoonray/releases/tag/openmoonray-2.40.0.1" class="text-blue-600">download</a>.
+          </p>
+
+          <p>This is a major release:</p>
+
+          <ul class="list-disc list-inside pl-4">
+            <li>Added a prototype gui tool, moonray_gui_v2, that uses Dear ImGui instead of QT and contains a number of new features</li>
+            <li>Added -print_bsdf command-line option for debugging BSDF configuration</li>
+            <li>Added <a href="https://docs.openmoonray.org/user-reference/tools/light-path-visualizer/">light path visualizer</a> support for <a href="https://docs.openmoonray.org/user-reference/tools/arras_render/">arras_render</a></li>
+            <li>Updated builds to fetch OptiX headers directly from NVIDIA's Github, removing the need to manually download the SDK</li>
+            <li>Various other documentation updates, bug fixes and improvements</li>
+          </ul>
+
+          <p>
+            See the <a href="https://github.com/dreamworksanimation/openmoonray/discussions/219" class="text-blue-600">release notes</a> for a complete list of changes.
+          </p>`}
+    />
+    <NewsItem
+      date="14-November-2025"
+      story={`
+          <p>
+            MoonRay 2.34.0.1 is now available for 
+            <a href="https://github.com/dreamworksanimation/openmoonray/releases/tag/openmoonray-2.34.0.1" class="text-blue-600">download</a>.
+          </p>
+
+          <p>This is a major release:</p>
+
+          <ul class="list-disc list-inside pl-4">
+            <li>moonray_gui now adds a <a href="https://docs.openmoonray.org/user-reference/tools/light-path-visualizer/#light-path-visualizer">path visualizer</a>. This enables users to better understand the path of rays through the scene and their interaction with light sources and materials</li>
+            <li>Supports per-lobe lightsets in vector and xpu modes</li>
+            <li>More efficient RDTSC-based timing measurements for NUMA systems</li>
+            <li>Now supports MacOS Tahaeo.  MacOS Sonoma and MacOS Sequoia are still supported</li>
+            <li>Several dependency updates and header include fixes were made to simplify building on a wider range of Linux distributions</li>
+            <li>Various other documentation updates, bug fixes and improvements</li>
+          </ul>
+
+          <p>
+            See the <a href="https://github.com/dreamworksanimation/openmoonray/discussions/215" class="text-blue-600">release notes</a> for a complete list of changes.
+          </p>`}
+    />
+    <NewsItem
       date="24-October-2025"
       story="We participated in a fun hackathon at the Ubuntu Summit to make an initial <a href='https://snapcraft.io/openmoonray' class='text-blue-600'>Snap installer for MoonRay</a>. Put together short order, and successfully tested on Rocky9, Rocky10, two flavors of Ubuntu, along with Windows Subsystem for Linux. Nice effort from everyone coming together to contribute! Check out the presentation of our session."
       youTubeVideoURL="https://www.youtube.com/embed/iW1r5jhXJlM?si=mnploXNul826KanZ"
