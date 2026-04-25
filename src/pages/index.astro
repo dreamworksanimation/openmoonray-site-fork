@@ -13,7 +13,7 @@ import * as Asset from '../scripts/AssetsPath'
 
     <p>MoonRay is DreamWorks&apos; open-source,
     <a href="https://research.dreamworks.com/wp-content/uploads/2019/10/2019-10-02-DreamWorks-Animation-Lumiere-Award-Moonray-Arras.pdf" class="text-blue-600">multi-award-winning</a>, state-of-the-art production MCRT renderer, which has been used on feature films such as How to Train Your Dragon: 
-    The Hidden World, The Bad Guys, Puss In Boots: The Last Wish, the newest release, Kung Fu Panda 4, as well as future titles. MoonRay was developed at DreamWorks and is in 
+    The Hidden World, The Bad Guys, Puss In Boots: The Last Wish, Kung Fu Panda 4, The Wild Robot, the newest release, The Bad Guys 2, as well as future titles. MoonRay was developed at DreamWorks and is in 
     continuous active development and includes an extensive library of production-tested, physically based materials, a USD Hydra render delegate, multi-machine and cloud rendering 
     via the Arras distributed computation framework.</p>
     <FullscreenImage 
@@ -39,6 +39,28 @@ import * as Asset from '../scripts/AssetsPath'
 
 
 <h1 class="text-3xl font-bold pt-10">News &amp; Releases</h1>
+    <NewsItem
+      date="24-April-2026"
+      story={`
+          <p>
+            MoonRay 3.6.0.1 is now available for 
+            <a href="https://github.com/dreamworksanimation/openmoonray/releases/tag/openmoonray-3.6.0.1" class="text-blue-600">download</a>.
+          </p>
+
+          <p>This is a major release:</p>
+
+          <ul class="list-disc list-inside pl-4">
+            <li>Added an annotation feature to the <a href="https://docs.openmoonray.org/user-reference/tools/render-profile-viewer/">render_profile_viewer</li>, and improved the image result tabs</li>
+            <li>Several improvements to moonray_gui_v2, including a camera hotkey to frame the scene, a 3D axis display, and added the SceneClass name to the scene inspector</li>
+            <li>LocalMotionBlur now handles rotational camera motion blur</li>
+            <li>Material AOVs can now be returned from secondary rays</lI>
+            <li>Various other documentation updates, bug fixes and improvements</li>
+          </ul>
+
+          <p>
+            See the <a href="https://github.com/dreamworksanimation/openmoonray/discussions/229" class="text-blue-600">release notes</a> for a complete list of changes.
+          </p>`}
+    />
     <NewsItem
       date="5-February-2026"
       story={`
