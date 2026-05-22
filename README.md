@@ -1,9 +1,12 @@
-# OpenMoonRay Website — Developer Guide
+# openmoonray-site - part of the [MoonRay](https://github.com/OpenMoonRay/openmoonray) project
+Policies concerning [Governance](https://github.com/OpenMoonRay/openmoonray/blob/main/GOVERNANCE.md), [Code of Conduct](https://github.com/OpenMoonRay/openmoonray/blob/main/CODE_OF_CONDUCT.md), and [Contribution](https://github.com/OpenMoonRay/openmoonray/blob/main/CONTRIBUTING.md) are available in the overarching MoonRay project, defined in the [`OpenMoonRay/openmoonray` GitHub repository superproject](https://github.com/OpenMoonRay/openmoonray).
+
+## OpenMoonRay Website — Developer Guide
 
 This repository contains the source code for the **OpenMoonRay** website, built using **Astro** and styled with **Tailwind CSS**.  
 This guide explains how to modify static pages, add news posts, and manage images or other public assets.
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 Static pages are located in:
 src
@@ -21,20 +24,20 @@ src/
 
 The site uses **Tailwind CSS** for styling.
 
-## 📰 Adding a News & Releases Post
+### 📰 Adding a News & Releases Post
 
 1. Open: src/index.astro
 2. Add a `<NewsItem />` component under the **News & Releases** section.
 
-### Required properties
+#### Required properties
 - `date`
 - `story`
 
-### Optional properties
+#### Optional properties
 - `youTubeVideoURL`
 - `imageURL`
 
-### Example
+#### Example
 
 ```astro
 <NewsItem
@@ -44,7 +47,7 @@ The site uses **Tailwind CSS** for styling.
 />
 ```
 
-## Add an image (or other files)
+### Add an image (or other files)
 
   In order for an image to be published on GitHub Pages along with this project it must be added in the __public__ folder. You may follow the project's current conventions and add the image to public/images. 
   
